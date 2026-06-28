@@ -1,0 +1,192 @@
+[
+  {
+    "id": "ext_plate_holes_00",
+    "slice": "extended_families",
+    "family": "box",
+    "prompt": "a plate with a pattern of holes",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extended family \u2014 engine pending"
+  },
+  {
+    "id": "ext_plate_holes_01",
+    "slice": "extended_families",
+    "family": "box",
+    "prompt": "a flat mounting plate with four bolt holes",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extended family \u2014 engine pending"
+  },
+  {
+    "id": "ext_container_00",
+    "slice": "extended_families",
+    "family": "cylinder",
+    "prompt": "a shelled container",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extended family \u2014 engine pending"
+  },
+  {
+    "id": "ext_container_01",
+    "slice": "extended_families",
+    "family": "cylinder",
+    "prompt": "a hollow cup-like container with thin walls",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extended family \u2014 engine pending"
+  },
+  {
+    "id": "ext_flange_00",
+    "slice": "extended_families",
+    "family": "cylinder",
+    "prompt": "a flanged revolve part",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extended family \u2014 engine pending"
+  },
+  {
+    "id": "ext_flange_01",
+    "slice": "extended_families",
+    "family": "cylinder",
+    "prompt": "a round flange with a central bore",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extended family \u2014 engine pending"
+  },
+  {
+    "id": "ext_slot_00",
+    "slice": "extended_families",
+    "family": "l_bracket",
+    "prompt": "a slotted bracket",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "leg_a": 50,
+      "leg_b": 30,
+      "thickness": 5,
+      "depth": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        40,
+        30
+      ],
+      "volume_mm3": null,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extended family \u2014 engine pending"
+  },
+  {
+    "id": "ext_slot_01",
+    "slice": "extended_families",
+    "family": "l_bracket",
+    "prompt": "an L-bracket with slotted holes",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "leg_a": 50,
+      "leg_b": 30,
+      "thickness": 5,
+      "depth": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        40,
+        30
+      ],
+      "volume_mm3": null,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extended family \u2014 engine pending"
+  }
+]

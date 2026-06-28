@@ -1,0 +1,123 @@
+/* CAD-Copilot palette — Fusion dark theme. Responsive 300–600px. */
+:root {
+  --bg-0: #2D2D2D;
+  --bg-1: #3A3A3A;
+  --bg-2: #454545;
+  --text-0: #FFFFFF;
+  --text-1: #B8B8B8;
+  --text-2: #808080;
+  --accent: #0696D7;
+  --accent-hi: #0AA8E8;
+  --ok: #4CAF50;
+  --warn: #FF9800;
+  --err: #F44336;
+  --border: #555;
+  --radius: 4px;
+  --sp: 8px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  background: var(--bg-0);
+  color: var(--text-0);
+}
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--sp) 12px; border-bottom: 1px solid var(--border);
+}
+header h1 { font-size: 14px; margin: 0; }
+.status { font-size: 11px; color: var(--text-1); display: flex; align-items: center; gap: 6px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-2); }
+.dot.ok { background: var(--ok); } .dot.err { background: var(--err); }
+main { flex: 1; padding: 12px; display: flex; flex-direction: column; gap: 12px; }
+
+.step { border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-1); }
+.step > .head {
+  display: flex; align-items: center; gap: 8px; padding: 8px 10px;
+  font-weight: 600; font-size: 12px; color: var(--text-1);
+}
+.step .num {
+  width: 18px; height: 18px; border-radius: 50%; background: var(--bg-2);
+  display: inline-flex; align-items: center; justify-content: center; font-size: 11px;
+}
+.step.active .num { background: var(--accent); color: #fff; }
+.step > .body { padding: 0 10px 10px; }
+.step.collapsed > .body { display: none; }
+
+textarea, input[type="text"], input[type="number"], select {
+  width: 100%; background: var(--bg-0); color: var(--text-0);
+  border: 1px solid var(--border); border-radius: var(--radius); padding: 7px 8px; font: inherit;
+}
+textarea { resize: vertical; min-height: 56px; }
+input:focus, textarea:focus, select:focus {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(6,150,215,.3);
+}
+.row { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+button {
+  font: inherit; border: none; border-radius: var(--radius); padding: 7px 12px; cursor: pointer;
+  background: var(--bg-2); color: var(--text-0);
+}
+button.primary { background: var(--accent); }
+button.primary:hover { background: var(--accent-hi); }
+button:disabled { opacity: .5; cursor: default; }
+
+/* parts tabs */
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 8px; }
+.tab {
+  padding: 5px 10px; border-radius: var(--radius); background: var(--bg-2);
+  font-size: 12px; cursor: pointer; border: 1px solid transparent;
+}
+.tab.active { background: var(--accent); }
+.tab.done { border-color: #3fae57; }
+.tab.done::after { content: " ✓"; color: #3fae57; font-weight: 600; }
+.summary { font-size: 12px; color: var(--text-1); margin: 4px 0 8px; }
+
+/* multi-view drawing */
+.views { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 4px; }
+.view { background: #262626; border: 1px solid var(--border); border-radius: var(--radius); padding: 4px 4px 2px; }
+.view .label {
+  font-size: 10px; color: var(--text-2); text-transform: uppercase; letter-spacing: .04em;
+  padding: 1px 3px;
+}
+.view svg { width: 100%; height: 104px; color: var(--text-1); display: block; }
+.view svg text { font-family: inherit; }
+/* highlight: dim lines + labels use currentColor, so recoloring the group lights them up */
+[data-ref].hl { color: var(--accent); }
+[data-ref].hl line, [data-ref].hl rect, [data-ref].hl circle,
+[data-ref].hl polygon, [data-ref].hl path, [data-ref].hl ellipse { stroke-width: 2.4; }
+
+/* dimensions — grouped like an engineering dimension schedule */
+.dims { margin-top: 12px; }
+.unit { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-1); }
+.unit select { width: auto; }
+.dimgroup { margin-bottom: 10px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.dimgroup > .gh {
+  display: flex; align-items: center; gap: 6px; padding: 6px 9px; background: var(--bg-2);
+  font-size: 11px; font-weight: 600; color: var(--text-1); letter-spacing: .03em;
+}
+.dimgroup > .gh .gcount { margin-left: auto; color: var(--text-2); font-weight: 400; }
+.dimgroup > .gb { padding: 2px 4px; }
+.dim {
+  display: flex; align-items: center; gap: 8px; padding: 4px 6px;
+  border-radius: var(--radius); border-left: 3px solid transparent;
+}
+.dim + .dim { border-top: 1px solid rgba(255,255,255,.04); }
+.dim.hl { background: rgba(6,150,215,.16); border-left-color: var(--accent); }
+.dim label { flex: 1; font-size: 12px; color: var(--text-0); }
+.dim .inwrap { display: flex; align-items: center; gap: 5px; }
+.dim input { width: 78px; text-align: right; }
+.dim .u { color: var(--text-2); font-size: 11px; width: 18px; }
+
+.msg { padding: 8px 10px; border-radius: var(--radius); font-size: 12px; margin-top: 8px; }
+.msg.ok { background: rgba(76,175,80,.15); color: #cfe9d0; }
+.msg.warn { background: rgba(255,152,0,.15); color: #ffe0b2; }
+.msg.err { background: rgba(244,67,54,.15); color: #ffcdd2; }
+.refusal { border-left: 3px solid var(--warn); }
+.opslog { font-size: 11px; color: var(--text-1); margin-top: 6px; white-space: pre-wrap; }
+.hint { font-size: 11px; color: var(--text-2); }
+footer { padding: 6px 12px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text-2);
+  display: flex; justify-content: space-between; }
+@media (max-width: 360px) { .views { grid-template-columns: 1fr; } }

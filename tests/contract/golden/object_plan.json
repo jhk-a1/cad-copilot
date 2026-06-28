@@ -1,0 +1,60 @@
+{
+  "object_name": "phone stand",
+  "summary": "A phone stand: a flat base with an upright back.",
+  "parts": [
+    {
+      "id": "base",
+      "name": "Base",
+      "family": "box",
+      "object_type": "prismatic",
+      "features": [],
+      "operations_likely": [
+        "sketch",
+        "extrude"
+      ],
+      "count": 1,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shape": "",
+      "hollow": false,
+      "opening": "",
+      "bore": false,
+      "pattern": "",
+      "purpose": "",
+      "requirements": [],
+      "attachment": null
+    },
+    {
+      "id": "upright",
+      "name": "Upright",
+      "family": "box",
+      "object_type": "prismatic",
+      "features": [],
+      "operations_likely": [
+        "sketch",
+        "extrude"
+      ],
+      "count": 1,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shape": "",
+      "hollow": false,
+      "opening": "",
+      "bore": false,
+      "pattern": "",
+      "purpose": "",
+      "requirements": [],
+      "attachment": null
+    }
+  ],
+  "complexity_class": "in_scope",
+  "clarifications_needed": [],
+  "assembly_notes": "Upright sits on the rear edge of the base (positioning is later scope).",
+  "confidence": 0.6
+}

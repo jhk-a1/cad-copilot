@@ -1,0 +1,144 @@
+[
+  {
+    "id": "dim_box_00",
+    "slice": "dimension_fidelity",
+    "family": "box",
+    "prompt": "a box 80mm x 40mm x 15mm",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 80,
+      "width": 40,
+      "height": 15
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        80,
+        40,
+        15
+      ],
+      "volume_mm3": 48000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "dim_box_01",
+    "slice": "dimension_fidelity",
+    "family": "box",
+    "prompt": "a 100 by 25 by 25 mm bar",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 100,
+      "width": 25,
+      "height": 25
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        100,
+        25,
+        25
+      ],
+      "volume_mm3": 62500,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "dim_box_02",
+    "slice": "dimension_fidelity",
+    "family": "box",
+    "prompt": "a thin plate 200mm x 150mm x 3mm",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 200,
+      "width": 150,
+      "height": 3
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        200,
+        150,
+        3
+      ],
+      "volume_mm3": 90000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "dim_cyl_00",
+    "slice": "dimension_fidelity",
+    "family": "cylinder",
+    "prompt": "a cylinder 12mm diameter 60mm tall",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 12,
+      "height": 60
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        12,
+        12,
+        60
+      ],
+      "volume_mm3": 6785.840131753953,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "dim_cyl_01",
+    "slice": "dimension_fidelity",
+    "family": "cylinder",
+    "prompt": "a 50mm diameter disc 5mm thick",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 50,
+      "height": 5
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        50,
+        5
+      ],
+      "volume_mm3": 9817.477042468105,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "dim_box_03",
+    "slice": "dimension_fidelity",
+    "family": "box",
+    "prompt": "a 30mm cube",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 30,
+      "width": 30,
+      "height": 30
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        30,
+        30,
+        30
+      ],
+      "volume_mm3": 27000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  }
+]

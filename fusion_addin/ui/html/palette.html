@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAD Copilot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>CAD Copilot</h1>
+      <span class="status"><span class="dot" id="dot"></span><span id="statusText">…</span></span>
+    </header>
+
+    <main>
+      <!-- Step 1: describe the OBJECT -->
+      <section class="step active" id="step-object">
+        <div class="head"><span class="num">1</span> Describe your object</div>
+        <div class="body">
+          <textarea id="objectInput"
+            placeholder="Describe an object… e.g. 'a phone stand', 'a 50×30×20 mm box', 'a cylinder 25mm diameter 40mm tall'"></textarea>
+          <div class="row">
+            <button class="primary" id="planBtn">Plan parts &rarr;</button>
+            <button id="clearBtn">Clear</button>
+          </div>
+          <div class="hint">The AI decomposes the object into the parts needed to build it.</div>
+        </div>
+      </section>
+
+      <!-- Step 2: parts + per-part multi-view drawing -->
+      <section class="step collapsed" id="step-parts">
+        <div class="head"><span class="num">2</span> Verify each part</div>
+        <div class="body">
+          <div class="summary" id="objectSummary"></div>
+          <div class="tabs" id="partTabs"></div>
+          <div class="views" id="views"></div>
+          <div class="dims" id="dims"></div>
+          <div class="row">
+            <div class="unit">Units:
+              <select id="unitSelect">
+                <option value="mm" selected>mm</option>
+                <option value="cm">cm</option>
+                <option value="in">in</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <button class="primary" id="generateBtn">Generate part &rarr;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 3: result -->
+      <section class="step collapsed" id="step-result">
+        <div class="head"><span class="num">3</span> Result</div>
+        <div class="body">
+          <div id="resultArea"></div>
+          <div class="edit-row" id="editRow" style="display:none; margin-top:10px;">
+            <label for="editInput" style="display:block; margin-bottom:4px;">Edit in words
+              (e.g. &ldquo;make the wall thicker&rdquo;, &ldquo;20% bigger&rdquo;, &ldquo;set wall to 3&rdquo;)</label>
+            <div style="display:flex; gap:6px;">
+              <input type="text" id="editInput" placeholder="describe a change…" style="flex:1;" />
+              <button id="editBtn">Apply edit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>v0.1.0</span>
+      <span id="modeTag"></span>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

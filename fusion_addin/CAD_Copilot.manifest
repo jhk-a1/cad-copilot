@@ -1,0 +1,13 @@
+{
+    "autodeskProduct": "Fusion360",
+    "type": "addin",
+    "id": "cad-copilot-addin",
+    "author": "CAD-Copilot",
+    "description": {
+        "": "AI-powered CAD assistant: natural language to parametric models."
+    },
+    "version": "0.1.0",
+    "runOnStartup": false,
+    "supportedOS": "windows|mac",
+    "editEnabled": true
+}

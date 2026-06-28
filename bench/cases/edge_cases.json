@@ -1,0 +1,145 @@
+[
+  {
+    "id": "edge_minimal_box",
+    "slice": "edge_cases",
+    "family": "box",
+    "prompt": "box",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "minimal input"
+  },
+  {
+    "id": "edge_minimal_cyl",
+    "slice": "edge_cases",
+    "family": "cylinder",
+    "prompt": "cylinder",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "minimal input"
+  },
+  {
+    "id": "edge_empty",
+    "slice": "edge_cases",
+    "family": "box",
+    "prompt": "",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "empty -> must clarify, not guess"
+  },
+  {
+    "id": "edge_extreme_small",
+    "slice": "edge_cases",
+    "family": "box",
+    "prompt": "a 0.5mm cube",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 0.5,
+      "width": 0.5,
+      "height": 0.5
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "volume_mm3": 0.125,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extreme small"
+  },
+  {
+    "id": "edge_extreme_large",
+    "slice": "edge_cases",
+    "family": "box",
+    "prompt": "a 2 meter long beam 100mm square",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 2000,
+      "width": 100,
+      "height": 100
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        2000,
+        100,
+        100
+      ],
+      "volume_mm3": 20000000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "extreme large"
+  },
+  {
+    "id": "edge_unit_inch",
+    "slice": "edge_cases",
+    "family": "box",
+    "prompt": "a box 2 inches by 1 inch by half an inch",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "imperial units \u2014 server normalizes to mm"
+  },
+  {
+    "id": "edge_ambiguous",
+    "slice": "edge_cases",
+    "family": "box",
+    "prompt": "make me something cool",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "ambiguous -> clarify"
+  }
+]

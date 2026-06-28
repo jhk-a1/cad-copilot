@@ -1,0 +1,6 @@
+{
+  "reason_code": "OUT_OF_SCOPE",
+  "message": "I can currently build boxes, cylinders, and L-brackets.",
+  "decomposition_suggestion": null,
+  "diagnostics": {"family": "None"}
+}

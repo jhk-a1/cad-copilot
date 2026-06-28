@@ -1,0 +1,11 @@
+{
+  "_comment": "TRIAL config — Anthropic ONLY, Claude Sonnet 4.6 to keep cost low (founder decision 2026-06-12). Claude Fable 5 is intentionally NOT used (unavailable to the founder). SAMPLER uses the cheapest Claude (Haiku 4.5) for high-volume best-of-N. Accuracy stays paramount via the verifier: a verifier-rejected generation escalates to Opus 4.8 (see _escalation_target) once the escalation ladder is built (ADR-002) — Sonnet is the cheap default, never a quality compromise. Activate: set MODELS_CONFIG_PATH=configs/models.anthropic.json and ANTHROPIC_API_KEY in ai_server/.env.",
+  "profiles": {
+    "INTENT":       {"provider": "anthropic", "model": "claude-sonnet-4-6", "params": {}},
+    "SKETCH":       {"provider": "anthropic", "model": "claude-sonnet-4-6", "params": {}},
+    "IR_CODEGEN":   {"provider": "anthropic", "model": "claude-sonnet-4-6", "params": {"max_tokens": 8192, "structured": false}},
+    "SAMPLER":      {"provider": "anthropic", "model": "claude-haiku-4-5", "params": {"temperature": 0.8}},
+    "VISION_JUDGE": {"provider": "anthropic", "model": "claude-sonnet-4-6", "params": {}}
+  },
+  "_escalation_target": "claude-opus-4-8"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ref_dragon",
+    "slice": "refusal_correctness",
+    "family": "unsupported",
+    "prompt": "a dragon statue",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "out of scope -> must not fabricate geometry"
+  },
+  {
+    "id": "ref_face",
+    "slice": "refusal_correctness",
+    "family": "unsupported",
+    "prompt": "a human face sculpture",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "out of scope -> must not fabricate geometry"
+  },
+  {
+    "id": "ref_gear",
+    "slice": "refusal_correctness",
+    "family": "unsupported",
+    "prompt": "a 24-tooth involute spur gear",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "out of scope -> must not fabricate geometry"
+  },
+  {
+    "id": "ref_engine",
+    "slice": "refusal_correctness",
+    "family": "unsupported",
+    "prompt": "a working car engine",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "out of scope -> must not fabricate geometry"
+  },
+  {
+    "id": "ref_assembly",
+    "slice": "refusal_correctness",
+    "family": "unsupported",
+    "prompt": "a full gearbox assembly with shafts and bearings",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "out of scope -> must not fabricate geometry"
+  },
+  {
+    "id": "ref_organic",
+    "slice": "refusal_correctness",
+    "family": "unsupported",
+    "prompt": "an organic flowing vase with curved surfaces",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "out of scope -> must not fabricate geometry"
+  },
+  {
+    "id": "ref_nonsense",
+    "slice": "refusal_correctness",
+    "family": "unsupported",
+    "prompt": "asdfghjkl qwerty",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "out of scope -> must not fabricate geometry"
+  },
+  {
+    "id": "ref_threads",
+    "slice": "refusal_correctness",
+    "family": "unsupported",
+    "prompt": "an M8 threaded bolt with hex head",
+    "clarification_answers": null,
+    "golden_dimensions": {},
+    "expected_geometry": null,
+    "reference_solid": null,
+    "expected_behavior": "clarify",
+    "notes": "out of scope -> must not fabricate geometry"
+  }
+]

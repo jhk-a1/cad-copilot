@@ -1,0 +1,11 @@
+{
+  "_comment": "OFFLINE DEFAULT: every profile is 'mock' so the pipeline/eval/tests run with no key. To go live, DON'T edit this file — set MODELS_CONFIG_PATH=configs/models.anthropic.json + ANTHROPIC_API_KEY in ai_server/.env. Trial = Anthropic only, Sonnet 4.6, no Fable. See configs/README.md.",
+  "profiles": {
+    "INTENT":       {"provider": "mock", "model": "mock-intent",  "params": {"effort": "low"}},
+    "SKETCH":       {"provider": "mock", "model": "mock-sketch",  "params": {"effort": "medium"}},
+    "IR_CODEGEN":   {"provider": "mock", "model": "mock-codegen", "params": {"effort": "high", "max_tokens": 8192}},
+    "SAMPLER":      {"provider": "mock", "model": "mock-sampler", "params": {"temperature": 0.8}},
+    "VISION_JUDGE": {"provider": "mock", "model": "mock-judge",   "params": {"effort": "low"}}
+  },
+  "_trial_config": "see configs/models.anthropic.json (Anthropic only, Claude Sonnet 4.6)"
+}

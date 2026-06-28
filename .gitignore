@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Data / models / vector store
+chroma_db/
+*.ckpt
+*.pt
+*.bin
+
+# Eval artifacts
+eval/results/
+eval/reports/
+docs/artifacts/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Node (palette tooling, if any)
+node_modules/

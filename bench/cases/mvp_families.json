@@ -1,0 +1,361 @@
+[
+  {
+    "id": "mvp_box_00",
+    "slice": "mvp_families",
+    "family": "box",
+    "prompt": "a box",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_box_01",
+    "slice": "mvp_families",
+    "family": "box",
+    "prompt": "make a rectangular block",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_box_02",
+    "slice": "mvp_families",
+    "family": "box",
+    "prompt": "create a box 50 by 30 by 20 mm",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_box_03",
+    "slice": "mvp_families",
+    "family": "box",
+    "prompt": "I need a simple cuboid",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_cylinder_00",
+    "slice": "mvp_families",
+    "family": "cylinder",
+    "prompt": "a cylinder",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_cylinder_01",
+    "slice": "mvp_families",
+    "family": "cylinder",
+    "prompt": "make a round rod",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_cylinder_02",
+    "slice": "mvp_families",
+    "family": "cylinder",
+    "prompt": "create a 25mm diameter cylinder 40mm tall",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_cylinder_03",
+    "slice": "mvp_families",
+    "family": "cylinder",
+    "prompt": "a tube",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_l_bracket_00",
+    "slice": "mvp_families",
+    "family": "l_bracket",
+    "prompt": "an L-bracket",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "leg_a": 50,
+      "leg_b": 30,
+      "thickness": 5,
+      "depth": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        40,
+        30
+      ],
+      "volume_mm3": null,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_l_bracket_01",
+    "slice": "mvp_families",
+    "family": "l_bracket",
+    "prompt": "make an angle bracket",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "leg_a": 50,
+      "leg_b": 30,
+      "thickness": 5,
+      "depth": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        40,
+        30
+      ],
+      "volume_mm3": null,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_l_bracket_02",
+    "slice": "mvp_families",
+    "family": "l_bracket",
+    "prompt": "create an L shaped bracket",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "leg_a": 50,
+      "leg_b": 30,
+      "thickness": 5,
+      "depth": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        40,
+        30
+      ],
+      "volume_mm3": null,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_l_bracket_03",
+    "slice": "mvp_families",
+    "family": "l_bracket",
+    "prompt": "an L profile bracket",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "leg_a": 50,
+      "leg_b": 30,
+      "thickness": 5,
+      "depth": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        40,
+        30
+      ],
+      "volume_mm3": null,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": ""
+  },
+  {
+    "id": "mvp_box_fillet",
+    "slice": "mvp_families",
+    "family": "box",
+    "prompt": "a box with rounded edges",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "filleted_edges feature"
+  },
+  {
+    "id": "mvp_box_holes",
+    "slice": "mvp_families",
+    "family": "box",
+    "prompt": "a box with mounting holes",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "length": 50,
+      "width": 30,
+      "height": 20
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        50,
+        30,
+        20
+      ],
+      "volume_mm3": 30000,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "holes feature"
+  },
+  {
+    "id": "mvp_cyl_cham",
+    "slice": "mvp_families",
+    "family": "cylinder",
+    "prompt": "a cylinder with chamfered top",
+    "clarification_answers": null,
+    "golden_dimensions": {
+      "diameter": 25,
+      "height": 40
+    },
+    "expected_geometry": {
+      "bbox_mm": [
+        25,
+        25,
+        40
+      ],
+      "volume_mm3": 19634.95408493621,
+      "tolerance_mm": 0.1
+    },
+    "reference_solid": null,
+    "expected_behavior": "generate",
+    "notes": "chamfer feature"
+  }
+]
